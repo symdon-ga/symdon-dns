@@ -1,0 +1,24 @@
+#+TITLE: Symdon DNS
+
+** For local
+
+*** Settings
+
+docker-composeファイル内のextra_hostsに設定したいドメイン名とIPアドレスを設定します。
+
+例::
+
+#+BEGIN_EXAMPLE
+    extra_hosts:
+      - "symdon.ga:127.0.0.1"
+      - "auth.symdon.ga:127.0.0.1"
+      - "demo-angular.symdon.ga:127.0.0.1"
+      - "django.symdon.ga:127.0.0.1"
+#+END_EXAMPLE
+
+
+*** Startup
+
+#+BEGIN_SRC
+docker-compose up
+#+END_SRC
