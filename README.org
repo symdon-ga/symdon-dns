@@ -18,7 +18,7 @@ Example::
 
 Include 127.0.0.1 in the DNS being queried.
 
-<img width="712" alt="スクリーンショット 2019-10-19 14 17 33" src="https://user-images.githubusercontent.com/50688746/67138261-8f43df80-f27b-11e9-90ff-e4b998942d08.png">
+![setup](https://user-images.githubusercontent.com/50688746/67138261-8f43df80-f27b-11e9-90ff-e4b998942d08.png "setup")
 
 *** Start server
 
