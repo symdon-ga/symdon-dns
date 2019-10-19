@@ -1,0 +1,17 @@
+version: '2'
+services:
+  dnsmasq:
+    restart: always
+    image: andyshinn/dnsmasq
+    container_name: dnsmasq
+    ports:
+      - "53:53/udp"
+      - "53:53/tcp"
+    extra_hosts:
+      - "symdon.ga:127.0.0.1"
+      - "auth.symdon.ga:127.0.0.1"
+      - "demo-angular.symdon.ga:127.0.0.1"
+      - "django.symdon.ga:127.0.0.1"
+      - "nickel.symdon.ga:127.0.0.1"
+    cap_add:
+      - NET_ADMIN
